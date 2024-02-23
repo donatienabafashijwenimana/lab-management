@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    overflow-y: hidden;
+}
+body header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background: #24294C;
+    justify-content: space-between;
+}
+body header .left-header{
+    width: 50%;
+
+}
+body header .right-header{
+    width: 22%;
+   display: flex;
+   justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+}
+body header h1{
+    text-transform: capitalize;
+    font-family: 'loto',sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 10px;
+    color: #F3F2F2;
+}
+body header .recent{
+    display: flex;
+}
+body header .recent i{
+    color: #fff;
+    padding: 4px 4px 0px 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+body header .recent samp{
+   width: 25px;
+   height: 25px;
+   border-radius: 10px;
+   color: #fff;
+   background: dodgerblue;
+   padding: 3px;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+}
+body header .notification{
+   display: flex;
+}
+body header .notification i{
+    color: #fff;
+    padding: 4px 4px 0px 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+body header .notification samp{
+    width: 25px;
+   height: 25px;
+   border-radius: 10px;
+   color: #fff;
+   background: dodgerblue;
+   padding: 3px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+}
+body header .user{
+    display: flex;
+    justify-content: space-between;
+}
+#get{
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 7px 0px 0px 4px;
+    cursor: pointer;
+}
+body header .user i{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 5px 0px 0px;
+}
+body header .user samp{
+    font-family: 'loto',sans-serif;
+    font-size: 15px;
+    color: #fff;
+    margin: 3px 0px 0px 0px;
+}
+
+/* menu style is goona be here */
+
+body menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+body menu .left-menu{
+    width: 23%;
+    height: 580.5px;
+    background: #fff;
+    border-right: 0.1px solid #DEDEDF;
+}
+body menu .left-menu .item{
+    width: 99%;
+    height: 40px;
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    cursor: pointer;
+    color: dodgerblue;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5px;
+}
+body menu .left-menu .item:hover{
+    background: #b3b3b35d;
+}
+.item i{
+    margin: 0px 10px 0px 10px;
+}
+
+/* body menu .left-menu .active{
+    background: dodgerblue;
+    height: 40px;
+    padding: 4px;
+    display: flex;
+    width: 99%;
+
+} */
+body menu .left-menu .item small{
+    font-family: 'loto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+   color: dodgerblue;
+}
+menu .right-menu{
+    width: 100%;
+    height: 580.5px;
+    background:#DEDEDF;
+}
+/* DASHBOARD CODE IS HERE */
+
+body menu .right-menu .dashboard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body menu .right-menu .dashboard .top_dashboard{
+    height: 35px;
+    display: flex;
+    width:90%;
+    padding:2px 15px 0px 15px;
+    margin: 4px 0px 0px 0px;
+}
+body menu .right-menu .dashboard .top_dashboard i{
+    color: dodgerblue;
+}
+body menu .right-menu .dashboard .top_dashboard small{
+    font-family: 'loto',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #191F48;
+    margin: 0px 0px 0px 6px;
+}
+.center_dashboard{
+   width: 95%;
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0px 0px 0px;
+}
+.dashboard_profile{
+    width: 35%;
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 200px;
+}
+ .dashboard_profile img{
+    width: 90%;
+    height: 300px;
+    border-radius: 4px;
+}
+ .dashboard_profile small{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #060b30;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.dashboard_profile small:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* loading that will append before an action took place */
+
+
+.loading_set{
+    width: 100%;
+    height: 545px;
+    position: absolute;
+    display: flex;
+    background: rgba(70, 70, 70, 0.473);
+    z-index: 2; 
+    display: none; 
+}
+.loading_spin{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border-top: 8px solid dodgerblue;
+    border-left: 8px solid dodgerblue;
+    border-right: 8px solid dodgerblue;
+    border-bottom: 8px solid rgba(94, 93, 93, 0.473);
+    animation: anm 1s linear infinite;
+    display: flex;
+    margin: 200px auto;
+}
+@keyframes anm{
+    
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* searched result*/
+
+.searched_result{
+    width: 100%;
+    height: 545px;
+    position: absolute;
+    display: flex;
+    background: rgba(83, 82, 82, 0.322);
+    z-index: 2;
+    display: none;
+}
+.searched_result .result{
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.searched_result .result .top_result{
+    width: 100%;
+    border-bottom: 0.1px solid rgba(83, 82, 82, 0.322);
+    height: 40px;
+}
+.searched_result .result .top_result small{
+    font-family: Arial,  sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+.searched_result .result .center_result{
+    width: 100%;
+    margin: 5px;
+}
+.searched_result .result .center_result .result_person{
+    width: 90%;
+    height: 20px;
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    justify-content: space-between;
+    margin: 4px 0px 0px 0px;
+}
+.searched_result .result .center_result .result_person:hover{
+    background: rgba(83, 82, 82, 0.322);
+    cursor: pointer;
+}
+.searched_result .result .center_result .result_person small{
+    font-family: Arial,  sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #060b30;
+}
+.searched_result .result .center_result .result_person samp{
+    font-family: 'loto',  sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    /* padding: 4px 0px 0px 20px; */
+    color: #060b30;
+}
+.searched_result .result .center_result .result_person i{
+    color: dodgerblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* ADDING NEW DEVICE */
+
+
+
+
+.new_device{
+    width: 100%;
+    height:600px;
+    position: absolute;
+    z-index: 2;
+    background: #42424285;
+    display: none;
+}
+.new_device .adding_form{
+    width: 40%;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    margin: 20px auto;
+}
+.new_device .adding_form form{
+    width: 90%;
+    padding: 20px;
+    font-family: 'loto',sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+
+}
+.new_device .adding_form form input,select{
+    height: 40px;
+    outline: none;
+    width: 80%;
+    display: flex;
+    padding: 4px;
+    margin: 2px auto;
+    border: 0.1px solid #42424285;
+    border-radius: 5px;
+    background: transparent;
+
+}
+.new_device .adding_form form label{
+    margin: 0px 0px 0px 50px;
+    font-weight: 400;
+    color: #02093d;
+}
+.new_device .adding_form button{
+display: flex;
+margin: 20px auto;
+width: 25%;
+height: 40px;
+border-radius: 5px;
+cursor: pointer;
+outline: none;
+border: none;
+background: #cccc;
+justify-content: center;
+padding: 6px 0px 0px 0px;
+}
+
+.active{
+    background: #b3b3b35d;
+}
+
+
+
+
+/* BORROWED ITEM CODE IS HERE */
+body menu .right-menu .borrowed-item{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+
+}
+body menu .right-menu .borrowed-item .top-right-menu{
+    height: 35px;
+    display: flex;
+    width: 90%;
+    padding: 2px 15px 0px 15px;
+    margin: 4px 0px 0px 0px;
+}
+body menu .right-menu .borrowed-item .top-right-menu i{
+    color: dodgerblue;
+}
+body menu .right-menu .borrowed-item .top-right-menu small{
+    font-family: 'loto',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #191F48;
+    margin: 0px 0px 0px 6px;
+}
+
+body menu .right-menu .borrowed-item .center-borrowed{
+    width: 100%;
+    background: #fff;
+    height: 540px;
+}
+body menu .right-menu .borrowed-item .center-borrowed .search-borrowed{
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+}
+body menu .right-menu .borrowed-item .center-borrowed .search-borrowed label{
+    font-family: 'loto',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 7px;
+    color: #000943;
+}
+body menu .right-menu .borrowed-item .center-borrowed .search-borrowed input{
+    outline: none;
+    border: none;
+    font-family: 'loto',sans-serif;
+    color: #000943;
+    font-size: 15px;
+    font-weight: 400;
+    width: 95%;
+}
+body menu .right-menu .borrowed-item .center-borrowed .search-borrowed .input i{
+    margin: 4px 3px 0px 0px;
+    cursor: pointer;
+    color: #ccc;
+}
+body menu .right-menu .borrowed-item .center-borrowed .search-borrowed .input{
+    width: 20%;
+    border: 0.1px solid #D5D6DD;
+    height: 25px;
+    border-radius: 4px;
+    padding: 3px;
+    display: flex;
+}
+body menu .right-menu .borrowed-item .center-borrowed .borrower-header{
+    width: 98.2%;
+    padding: 10px;
+    border-bottom:0.1px solid #DEDEDF;
+}
+body menu .right-menu .borrowed-item .center-borrowed .borrower-header .heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 0px;
+}
+body menu .right-menu .borrowed-item .center-borrowed .borrower-header .heading .borrow{
+    display: flex;
+}
+body menu .right-menu .borrowed-item .center-borrowed .borrower-header .heading .borrow i{
+    font-size: 12px;
+    margin: 2.5px 0px 0px 0px;
+    color: #a1a1a1;
+    cursor: pointer;
+}
+body menu .right-menu .borrowed-item .center-borrowed .borrower-header .heading p{
+    font-family: 'loto',sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #010629;
+}
+
+/* body of borrower */
+.body{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 430px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.body table{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-family: 'loto',sans-serif;
+    font-size: 14px;
+}
+.body table tr{
+    margin: 0px 0px 20px 0px;
+}
+.body table td{
+    border: none;
+    padding: 0px 15px 20px 0px;
+    margin: 0px 0px 20px 0px;
+}
+.body table td button{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border-radius: 4px;
+    background: dodgerblue;
+    color: #fff;
+    border: none;
+    font-family: 'loto',sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* log */
+.log{
+    width: 8%;
+    height: 150px;
+    background: #24294C;
+    border-radius: 2px 0px 0px 6px;
+    position: absolute;
+    transform: translateX(1150%);
+    z-index: 1;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+.log .set{
+    padding: 5px;
+    margin: 10px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    border-radius: 4px;
+}
+.log .set:hover{
+    background: rgba(30, 143, 255, 0.548);
+    cursor: pointer;
+}
+.log .set i{
+    font-size: 16px;
+    color: #fff;
+    padding: 0px 6px 0px 0px;
+}
+.log small{
+    color: #fff;
+    font-family: 'loto',sans-serif;
+    font-size: 14px;
+}
+/* notification */
+.notification-content{
+    width: 20%;
+    height: 400px;
+    background: #ffffff;
+    border: 0.1px #ccc solid;
+    border-radius: 0px 0px 5px 5px;
+    position: absolute;
+    transform: translateX(380%);
+    display: none;
+}
+.notification-content .top{
+    border-bottom: solid 0.1px #ccc;
+    width: 97%;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.notification-content .top samp{
+    font-family: 'loto',sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.notification-content .top i{
+    padding: 0px 12px 0px 0px;
+    color: #010629;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* recent */
+.recent-content{
+    width: 20%;
+    height: 400px;
+    background: #ffffff;
+    border: 0.1px #ccc solid;
+    border-radius: 0px 0px 5px 5px;
+    position: absolute;
+    transform: translateX(300%);
+    display: none;
+   
+}
+.recent-content .top{
+    border-bottom: solid 0.1px #ccc;
+    width: 97%;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.recent-content .top samp{
+    font-family: 'loto',sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.recent-content .top i{
+    padding: 0px 12px 0px 0px;
+    color: #010629;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* present computer style */
+
+
+.presentComputer{
+    width: 70%;
+    display: flex;
+    padding: 20px;
+
+
+}
+.print{
+    position:absolute;
+    margin-left: 97%;
+    background-color: #010629;
+}

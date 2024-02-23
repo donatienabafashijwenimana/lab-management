@@ -1,0 +1,206 @@
+.right-menu{
+    padding: 2px 0px 0px 0px;
+    
+}
+.right-menu .top{
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding: 5px;
+   background: rgba(255, 255, 255, 0.89);
+   border-bottom: 0.1px solid rgba(255, 255, 255, 0.363);
+
+}
+.right-menu .top .left{
+    width: 40%;
+    display: flex;
+    padding: 5px;
+    flex-direction:row ;
+}
+.right-menu .top .left small{
+    font-family: 'loto',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.right-menu .top .left select{
+    outline: none;
+    width: 50%;
+    border-radius: 4px;
+    height: 30px;
+    background: transparent;
+    font-family: 'loto',sans-serif;
+    border: 0.1px solid #24294de7;
+}
+
+.right-menu .top .right{
+    width: 60%;
+    display: flex;
+    margin: 10px 0px 0px 200px;
+}
+.right-menu .top .right i{
+    color: #24294de7;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+}
+.right-menu .top .right .search{
+    display: flex;
+    width: 50%;
+    height: 30px;
+    border: 0.1px solid rgba(204, 204, 204, 0.712);
+    border-radius: 4px;
+    background: transparent;
+    padding: 5px;
+    margin:3px 0px 0px 90px;
+}
+.right-menu .top .right .search input{
+    width: 98%;
+    outline: none;
+    border: none;
+    font-family: 'loto',sans-serif;
+    color: #24294de7;
+
+}
+
+.right-menu table{
+    width: 100%;
+    padding: 5px;
+    font-family: 'loto',sans-serif;
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px;
+    border: 0.1px solid rgba(0, 8, 51, 0.534);
+    background: rgba(255, 255, 255, 0.897);
+}
+.right-menu table thead{
+    height: 30px;
+    background: rgba(0, 1, 53, 0.788);
+    
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 5px;
+}
+.right-menu table thead td{
+    color: #fff;
+}
+.right-menu table td{
+    height: 20px;
+    padding: 4px;
+    font-family: 'loto',sans-serif;
+    font-weight: 500;
+    border: none;
+    color: black;
+    /* background: rgba(201, 201, 201, 0.863); */
+}
+.right-menu table tr{
+    border-bottom: 0.1px solid rgba(0, 8, 51, 0.534);
+}
+.right-menu table button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: rgba(0,2,109,0.671);
+    height: 30px;
+    padding: 4px;
+    width: fit-content;
+    color: #fff;
+}
+.right-menu .data{
+    background-color: white;
+    width:100%;
+    margin:20px 0px 0px 0px;
+    height: 300px;
+    overflow-y: auto;
+}
+.right-menu table #return{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: rgba(0,2,109,0.671);
+    height: 30px;
+    padding: 4px;
+    text-decoration: none;
+    width: fit-content;
+    color: #fff;
+}
+.edit_container{
+    width: 81.3%;
+    height: 600px;
+    position: absolute;
+    z-index: 2;
+    background: #838fff57;
+}
+.edit_container .edit_content{
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    margin: 80px auto;
+    padding: 20px;
+}
+.edit_container .edit_content form{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    width: 100%
+}
+.edit_container .edit_content form input{
+    width: 60%;
+    height: 40px;
+    outline:none;
+    border: 0.1px solid rgba(0, 37, 78, 0.459);
+    padding: 5px;
+    font-family: 'loto',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    margin: 6px auto;
+    border-radius: 6px;
+}
+.edit_container .edit_content form button{
+    margin: 20px auto;
+    display: flex;
+    width: 50%;
+    height: 30px;
+    justify-content: center;
+    padding: 4px 0px 0px 0px;
+    background: #020e68e7;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.search_container{
+    width: 81.3%;
+    height: 600px;
+    position: absolute;
+    background: transparent;
+    /* background: rgba(206, 206, 206, 0.301); */
+    /* z-index: 2;  */
+}
+.search_container .result_container{
+    width: 30%;
+    height:300px;
+    background: #fff;
+    overflow-y: auto;
+    border-radius: 5px;
+    max-height: 400px;
+    display: flex;
+    float: right;
+    padding:12px;
+    margin: 70px 0px 0px 0px;
+    box-shadow: 3px 4px 3px 5px #dddddde3;
+}
+.search_container .result_container .top{
+    height: 30px;
+    border-bottom: 0.1px solid rgba(206, 206, 206, 0.301);
+    padding: 4px;
+}
+.search_container .result_container .top small{
+    font-family: 'loto',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}

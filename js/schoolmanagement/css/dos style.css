@@ -1,0 +1,108 @@
+*{
+    padding:0px;
+    margin:0px;
+    overflow-x: hide;
+    
+}
+.container{
+    width: 100%;
+    height:100%;
+    
+}
+
+.top{
+    width:100%;
+    height:2.5pc;max-height: 2.5pc;
+    background-color: dodgerblue;
+    display: flex;
+    padding-left: 1pc;
+    font-size: 2pc;
+    align-items: center;
+    justify-content: space-between;
+}
+.top img{
+   width: 2pc;
+   position: absolute;
+   margin-top: 0.1pc;
+   height:2pc 
+}
+.top span{
+    margin-left: 2pc;
+}
+.top .user-top {
+    margin-right: -27pc;
+}
+.top .user-top  img{
+    width:1pc;
+    margin-top: 1pc;
+    height: 1pc;
+}
+.top .user-top .logout{
+    position: absolute;
+    font-size: 1pc;
+    background-color: rgb(59, 157, 254);
+    width: 8.5pc;border-radius: 0.3pc;
+    padding: 0.2pc;
+}
+.active{
+    background-color: grey;
+}
+.container .container2{
+    display: flex;
+    background-color: grey;
+    width: 100%;
+
+}
+.container2 .left-menu{
+background-color: white;
+height: 24.5pc;
+width:15%;
+padding-left: 1pc;
+display: flex;
+flex-direction: column;
+    
+}
+.container2 .left-menu div{
+  margin-top: 1pc;
+}
+form{
+    background: white;
+}
+.container2 .left-menu div:hover{
+    background-color: grey;
+  }
+.container .right-menu{
+    width: 100%;
+    height: 10pc;
+}
+table{
+    margin-top: 2pc;
+    border-radius: 0.5pc;
+    padding:1pc;
+    background-color: rgb(255, 253, 253);
+}
+table td,th{
+    border:solid transparent 0.4pc;
+}
+td .header{
+    font-size: 1.5pc;
+    width: fit-content;
+    border-bottom: 0.1pc solid black;
+}
+table .action{
+    width:3pc;
+}
+
+table #update{
+    text-decoration: none;
+    color: black;
+    margin-left: 2pc;
+    background-color: dodgerblue;
+     border-radius: 0.2pc;
+}
+table #delete{
+    color: black;
+    border-radius: 0.3pc;
+    text-decoration: none;
+    background-color: brown;
+}

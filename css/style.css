@@ -1,0 +1,32 @@
+
+*{
+    overflow-y: hidden;
+}
+.right-menu{
+    background-color: aqua;
+}
+.right-menu .tophead{
+    width:100%; 
+    background-color: grey;
+
+}
+.right-menu table{
+    width:100%;
+}
+.right-menu table thead{
+    background-color: #112255;
+    border-bottom: rgba(7, 0, 17, 0.965) solid 0.1pc;
+}
+.right-menu table thead td{
+    color:bisque
+}
+.right-menu table tr td{
+    margin-top: 1pc;
+}
+.right-menu input{
+    margin-top: 0.2pc;
+    border-radius: 0.2pc;
+    float: right;
+    outline:none;
+    margin-right: 0.2pc;
+}

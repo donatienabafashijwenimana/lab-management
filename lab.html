@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lab.css">
+    <title>LAB MANAGEMENT SYSTEM</title>
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <h1>LAB MANAGEMENT SYSTEM</h1>
+        </div>
+        <div class="right-header">
+           
+            <div class="recent">
+                <i class="bi bi-clock-history"></i>
+                <samp>5</samp>
+            </div>
+            <div class="notification">
+                <i class="bi bi-bell"></i>
+                <samp>0</samp>
+            </div>
+            <div class="user">
+                <i class="bi bi-person"></i>
+                <samp>Administrator</samp>
+                <i class="bi bi-caret-down" id="get"></i>
+            </div>
+        </div>
+    </header>
+    <div class="notification-content">
+        <div class="top">
+            <samp>Notification</samp>
+            <i class="bi bi-caret-down"></i>
+        </div>
+    </div>
+    <div class="recent-content">
+        <div class="top">
+            <samp>Recent Activity</samp>
+            <i class="bi bi-caret-down"></i>
+        </div>
+    </div>
+    <div class="log">
+        <div class="set">
+            <i class="bi bi-person-circle"></i>
+            <small>Profile</small>
+        </div>
+        <div class="set">
+            <i class="bi bi-check"></i>  
+            <small>Setting</small> 
+        </div>
+        <div class="set">
+            <i class="bi bi-file-arrow-down"></i>
+            <small>Logout</small>
+        </div>
+    </div>
+    <div class="loading_set">
+        <div class="loading_spin"></div>
+    </div>
+    <div class="searched_result">
+        <div class="result">
+            <div class="top_result">
+               <small>Result:</small> 
+            </div>
+            <div class="center_result">
+                <div class="result_person">
+                    <small>Iragena Egide</small>
+                    <samp>Computer Elite Hp</samp>
+                    <i class="bi bi-check-circle"></i>  
+                </div>
+                <div class="result_person">
+                    <small>Drex Prafait</small>
+                    <samp>Mac Book 10</samp>
+                    <i class="bi bi-check-circle"></i>  
+                </div>
+                <div class="result_person">
+                    <small>Uwase Queen Ines</small>
+                    <samp>Lenovo</samp>
+                    <i class="bi bi-check-circle"></i>  
+                </div>
+                <div class="result_person">
+                    <small>Beza Fidelle</small>
+                    <samp>positivo BGH</samp>
+                    <i class="bi bi-check-circle"></i>  
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="new_device">
+        <div class="adding_form">
+            <form action="#" method="post">
+                    <label for=""> student first name</label> 
+                    <input type="text">
+                    <label for="">student second name</label>
+                    <input type="text">
+                    <label for="">class</label>
+                    <input type="text">
+                    <label for="">Trade</label>
+                    <select name="" id="">
+                        <option value="">Software Development</option>
+                        <option value="">Multimedia</option>
+                        <option value="">Accounting</option>
+                        <option value="">Electonics Service</option>
+                        <option value="">Business Service</option>
+                        <option value="">Carpentry</option>
+                        <option value="">Building Construction</option>
+                        <option value="">Computer System Architecture</option>
+                        <option value="">Telecommunication</option>
+                    </select>
+                    <label for="">computer name</label>
+                    <input type="text">
+                    <label for="" >Computer Serial Number</label>
+                    <input type="text" >
+                    <button>Add</button>
+            </form>
+        </div>
+    </div>
+    <menu>
+       
+        <div class="left-menu">
+
+            <div class="item active" id="getDashboard">
+                <i class="bi bi-speedometer2"></i>
+                <small>Dashboard</small>
+            </div>
+            <!-- <div class="item">
+                <i class="bi bi-cloud-minus"></i>
+                <small>Transaction</small>
+            </div> -->
+            <div class="item" id="borrowedItem">
+                <i class="bi bi-file-arrow-down"></i>
+                <small>All Computer</small>
+            </div>
+            <div class="item" id="presentComputer">
+                <i class="bi bi-file-arrow-down"></i>
+                <small>Present Computer</small>
+            </div>
+            <div class="item">
+                <i class="bi bi-check-circle"></i>
+                <small>Borrowed Computer</small>
+            </div>
+            <div class="item" id="getNewDevice">
+                <i class="bi bi-plus-circle"></i>
+                <small>New</small>
+            </div>
+            <div class="item">
+                <i class="bi bi-house"></i>
+                <small>Lab Room</small>
+            </div>
+            <div class="item">
+                
+                <i class="bi bi-person-circle"></i>
+                <small>User</small>
+            </div>
+            <!-- <div class="item">
+                <i class="bi bi-clock-history"></i>
+                <small>History</small>
+            </div> -->
+        </div>
+        <div class="right-menu">
+            <div class="dashboard">
+                <div class="top_dashboard">
+                    <i class="bi bi-speedometer2"></i>
+                    <small>Dashboard</small>
+                    <div class="center_dashboard">
+                        <div class="dashboard_profile">
+                            <img src="image/avatar.jpg" alt="">
+                            <small>User(24)</small>
+                        </div>
+                        <div class="dashboard_profile">
+                            <img src="image/device.png" alt="">
+                            <small>Device(125)</small>
+                        </div>
+                        <div class="dashboard_profile">
+                            <img src="image/request.png" alt="">
+                            <small>Request(8)</small>
+                        </div>
+                        <div class="dashboard_profile">
+                            <img src="image/transaction.jpg" alt="">
+                            <small>Transaction(56)</small>
+                        </div><br>
+                        
+
+                    </div>
+                    
+                    
+                </div> 
+                <!-- <div class="center_dashboard2">
+                    <div class="dashboard_profile">
+                        <img src="image/history.jpg" alt="">
+                        <small>History(236)</small>
+                    </div><br>
+                    
+
+                </div>  -->
+            </div>
+            <div class="borrowed-item">
+                <div class="top-right-menu">
+                    <i class="bi bi-file-arrow-down"></i>
+                    <small>Borrowed Items</small>
+                </div>
+                <div class="center-borrowed">
+                   <div class="search-borrowed">
+                        <div class="input">
+                            <input type="text">
+                            <i class="bi bi-search" id="search_btn"></i>
+                        </div>
+                        
+                   </div>
+                    <div class="borrower-header">
+                        <div class="heading">
+                           
+                            <div class="borrow">
+                                <p>Borrower Name</p>
+                                <i class="bi bi-caret-down"></i>
+                            </div>
+                            <div class="borrow">
+                                <p>Borrowed Date</p>
+                                <i class="bi bi-caret-down"></i>
+                            </div>
+                               <div class="borrow">
+                                <p>Items Borrowed</p>
+                                <i class="bi bi-caret-down"></i>
+                               </div>
+                               <div class="borrow">
+                                <p>Room</p>
+                                <i class="bi bi-caret-down"></i>
+                               </div>
+                               <div class="borrow">
+                                <p>Action</p>
+                                <i class="bi bi-caret-down"></i>
+                               </div>
+                               
+                                
+                                
+                        </div>
+                        
+                    </div>
+                    <div class="body">
+                        <table border="1">
+                            <tr>
+                                <td>Ines Queen Uwase</td>
+                                <td>January 23,2024 8:48 PM</td>
+                                <td>HP-Elite NEW-MODEL</td>
+                                <td>Room 004</td>
+                                <td><button>Return</button></td>
+                            </tr>
+                            <tr>
+                                <td>Iragena Egide</td>
+                                <td>February 9,2024 9:06 AM</td>
+                                <td>Hp ProBook</td>
+                                <td>Room 002</td>
+                                <td><button>Return</button></td>
+                            </tr>
+                            <tr>
+                                <td>Drex Prafait</td>
+                                <td>December 17,2024 10:48 AM</td>
+                                <td>Toshiba NEW</td>
+                                <td>SOD LAB 004</td>
+                                <td><button>Return</button></td>
+                            </tr>
+                            <tr>
+                                <td>Beza Fidelle</td>
+                                <td>March 12,2024 12:58 PM</td>
+                                <td>Phantom New SCYP</td>
+                                <td>SOD LAB 001</td>
+                                <td><button>Return</button></td>
+                            </tr>
+                            <tr>
+                                <td>Nyamagabe Donatien</td>
+                                <td>August 01,2023 11:08 AM</td>
+                                <td>HP-Elite NEW-MODEL</td>
+                                <td>Room 001</td>
+                                <td><button>Return</button></td>
+                            </tr>
+                            <tr>
+                                <td>Teta Izia Deise</td>
+                                <td>September 03,2024 4:08 PM</td>
+                                <td>Posivito BGH Black V-</td>
+                                <td>MLM LAB 001</td>
+                                <td><button>Return</button></td>
+                            </tr>
+                            <tr>
+                                <td>Shema Didier</td>
+                                <td>April 3,2024 12:28 AM</td>
+                                <td>Lenovo Think-Book Pro</td>
+                                <td>SOD LAB 003</td>
+                                <td><button>Return</button></td>
+                            </tr>
+                            
+                        </table>
+
+                    </div>        
+                </div>
+            </div>
+            <div class="presentComputer">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student Class</th>
+                            <th>Present Date</th>
+                            <th>Present type</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iragena Egide</td>
+                            <td>L5 Software Development</td>
+                            <td>07-02-2023</td>
+                            <td>Hp Pro book</td>
+                            <td>Present</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+        </div>
+    </menu>
+</body>
+<script src="lab.js"></script>
+</html>

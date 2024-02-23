@@ -1,0 +1,69 @@
+$(document).ready(function(){
+    $(".recent").click(function(){
+        $(".recent-content").show()
+    })
+    $(".left-menu,.right-menu").click(function(){
+        $(".recent-content").hide()
+    })
+    $("input").on("input",function(){
+        alert('yes')
+    })
+
+
+
+
+        $(".item").removeClass("active")
+        $("#Dashboard").addClass("active")
+        $.post("dashboard.php",
+        function(data,status){
+            $(".right-menu").html(data)
+    })
+    $("#Dashboard").click(function(){
+        $(".item").removeClass("active")
+        $(this).addClass("active")
+        $.post("dashboard.php",
+        function(data,status){
+
+            $(".right-menu").html(data)
+        })
+    })
+    $("#allitem").click(function(){
+        $(".item").removeClass("active")
+        $(this).addClass("active")
+        $.post("allcomp.php",
+        function(data,status){
+            $(".right-menu").empty()
+            $(".right-menu").append(data)
+        })
+    })
+    $("#outitem").click(function(){
+        $(".item").removeClass("active")
+        $(this).addClass("active")
+        $.post("outcomp.php",
+        function(data,status){
+            $(".right-menu").empty()
+            $(".right-menu").append(data)
+        })
+    })
+    $("#presentitem").click(function(){
+        $(".item").removeClass("active")
+        $(this).addClass("active")
+        $.post("presentcomp.php",
+        function(data,status){
+            $(".right-menu").empty()
+            $(".right-menu").append(data)
+        })
+    })
+    $("#getNewDevice").click(function(){
+        $(".item").removeClass("active")
+        $(this).addClass("active")
+        $.post("new.php",
+        function(data,status){
+            $(".right-menu").empty()
+            $(".right-menu").append(data)
+        })
+    })
+   $("table").click(function(){
+    alert("yes")
+   })
+})

@@ -1,0 +1,34 @@
+*{
+    padding:0px;
+    margin:0px
+}
+form{
+    position:absolute;
+    margin-top:4pc;
+    padding:2pc;
+    border-radius: 1pc;
+    width:auto;
+    outline:none;
+    background-color: aliceblue;
+    width:20%;
+    height:auto;
+    
+    margin-left: 30%;
+}
+.right-menu form input{
+    background-color: white;
+    border-radius: 0.3pc;
+    outline: none;
+}
+.right-menu form input[type=submit]{
+    background-color: darkblue;
+    border: none;
+    margin-top: 1pc;
+    border-radius: 0.3pc;
+    height: 2pc;
+    width:8pc;
+
+}
+.right-menu form select{
+    width:90%;
+}
